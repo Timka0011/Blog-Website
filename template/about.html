@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block banner %}
+
+About Us
+
+{% endblock %}
+
+{% block content %}
+<!-- progressbar -->
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4 mb-lg-0">
+        <img src="{% static 'images/about/about-us.png' %}" alt="about" class="img-fluid">
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <div class="progress-block">
+          <h6 class="text-uppercase">HTML5 Expertise</h6>
+          <div class="progress">
+            <div class="progress-bar" data-percent="85">
+              <span class="skill-number text-dark font-weight-bold"><span class="count">65</span>%</span>
+            </div>
+          </div>
+        </div>
+        <div class="progress-block">
+          <h6 class="text-uppercase">Python Expertise</h6>
+          <div class="progress">
+            <div class="progress-bar" data-percent="95">
+              <span class="skill-number text-dark font-weight-bold"><span class="count">95</span>%</span>
+            </div>
+          </div>
+        </div>
+        <div class="progress-block">
+          <h6 class="text-uppercase">Project Manager</h6>
+          <div class="progress">
+            <div class="progress-bar" data-percent="79">
+              <span class="skill-number text-dark font-weight-bold"><span class="count">79</span>%</span>
+            </div>
+          </div>
+        </div>
+        <div class="progress-block">
+          <h6 class="text-uppercase">User Interface Expertise</h6>
+          <div class="progress">
+            <div class="progress-bar" data-percent="90">
+              <span class="skill-number text-dark font-weight-bold"><span class="count">90</span>%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /progressbar -->
+
+<!-- video -->
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="overlay-secondary video-player">
+          <img src="{% static 'images/about/video-thumb.jpg' %}" alt="video-thumb" class="img-fluid w-100">
+          <a class="play-icon">
+            <i class="text-center icon-sm icon-box-sm rounded-circle text-white bg-gradient-primary d-block ti-control-play content-center"
+              data-video="https://www.youtube.com/watch?v=S9bCLPwzSC0&pp=ygUGZW1pbmVt?autoplay=1">
+              <div class="ripple"></div>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /video -->
+
+{% include "team_include.html" %}
+
+
+{% endblock %}

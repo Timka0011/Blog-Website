@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% load static %}
+{% block banner %}
+
+Create News
+
+{% endblock banner %}
+
+{% block content %}
+
+
+<br>
+<br>
+<br>
+<h1 class="text-center ">Create News</h1>
+<br>
+<br>
+<br>
+<form action="" method="post" class="col-lg-6 offset-lg-3" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    {{ form|crispy }}
+
+    <button class="btn-success" type="submit" class="font-size: 24px,!important">Create</button>
+
+    <!-- <button class="btn-success" type="submit" class="font-size: 24px,!important"><a href="{% url 'signup' %}">SIGN UP</a></button> -->
+
+</form>
+<br>
+<br>
+<br>
+<br>
+
+
+{% endblock content %}
